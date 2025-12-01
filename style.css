@@ -20,13 +20,13 @@ body {
   font-weight: 400;
 }
 
-.fon {
+.flowers_background {
   position: absolute;
   width: 790px;
   height: 697px;
   top: 0px;
   left: 85px;
-  background-image: url('images/fon.png');
+  background-image: url('images/flowers_background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -35,11 +35,11 @@ body {
   transform: rotate(0deg);
 }
 
-.hero {
+.title-wrapper {
   padding: 220px 217px 110px;
 }
 
-.hero-title{
+.title{
   margin-bottom: 8px;
   font-weight: 400;
   font-size: 70px;
@@ -68,7 +68,6 @@ body {
   gap: 45px;
   justify-content: center;
 }
-
 
 .card-container {
   width: 340px;
