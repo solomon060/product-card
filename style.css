@@ -20,7 +20,7 @@ body {
   font-weight: 400;
 }
 
-button {
+.action-btn {
   padding: 10px 15px;
   font-size: 13.5px;
   font-weight: bold;
@@ -133,4 +133,13 @@ button {
 .product-price {
   font-size: 20px;
   line-height: 24px;
+}
+
+#change-color-button { 
+  background-color: #db990bff;
+  transition: background-color 0.3s; 
+}
+
+#change-color-button.active-color {
+  background-color: #1da9c5ff;
 }
