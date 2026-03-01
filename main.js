@@ -5,8 +5,8 @@ const changeColorAllCardButton = document.querySelector('#change-color-all-card'
 const greenColorHash = '#a0cea0ff';
 
 changeColorAllCardButton.addEventListener('click', () => {
-  productCards.forEach((card) => card.style.backgroundColor = greenColorHash)
-})
+  productCards.forEach((card) => card.style.backgroundColor = greenColorHash);
+});
 
 // Покраска первой карточки
 
@@ -16,18 +16,18 @@ const blueColorHash = '#8b9bccff';
 
 changeColorFirstCardButton.addEventListener('click', () => {
   firstProductCard.style.backgroundColor = blueColorHash;
-})
+});
 
 // Открыть Google
 
-const openGoogleButton =document.querySelector('#open-google');
-openGoogleButton.addEventListener('click', openGoogle)
+const openGoogleButton = document.querySelector('#open-google');
+openGoogleButton.addEventListener('click', openGoogle);
 
 function openGoogle() {
   const answer = confirm('Вы действительно хотите открыть Google?');
 
   if (answer == true) {
-    window.open('https://google.com')
+    window.open('https://google.com');
   }
 }
 
@@ -37,19 +37,19 @@ const outputLogButton = document.querySelector('#output-console-log');
 outputLogButton.addEventListener('click', () => outputConsoleLog('ДЗ №4'));
 
 function outputConsoleLog(message) {
-  alert(message)
-  console.log(message)
+  alert(message);
+  console.log(message);
 }
 
 // Вывод названия в лог при наведении мыши
 
-const titleLog = document.querySelector('.title')
+const titleLog = document.querySelector('.title');
 
 titleLog.addEventListener('mouseenter', () => {
   console.log(titleLog.textContent);
 });
 
-//Кнопка меняющая цвет с одного на другой
+// Кнопка меняющая цвет с одного на другой
 
 const colorButton = document.getElementById('change-color-button');
 
