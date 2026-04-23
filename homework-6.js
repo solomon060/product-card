@@ -35,7 +35,7 @@ function checkMaxSpeed(carObj) {
 
 // 6. Написать функцию, которая получает первым аргументом  — объект, а вторым аргументом — свойство объекта, которое нужно вывести и выводит его значение.
 
-function printProperty(obj, propName) {
+function printObjectProperty(obj, propName) {
   console.log(obj[propName]);
 }
 
@@ -105,7 +105,7 @@ const allMovies = [...movies, ...lotrUniverse];
 
 // 10. Почитать про метод массива — map. Написать функцию, которая принимает массив сущностей с задания №9. Добавляем новое свойство для объекта "isRare (это редкий)" и в зависимости от года выпуска книги (или какой-то логики, связанной с вашей сущностью), устанавливаем true или false. Что я хочу этим сказать: если книга выпущена позже 2000 года, устанавливаем true (да, это редкий), нет - false (значит это не редкий). В данном случае проверяем кассовые сборы фильмаов.
 
-function addIsRare(movies) {
+function getMoviesWithIsRare(movies) {
   return movies.map(movie => {
     return {
       ...movie,
@@ -114,4 +114,4 @@ function addIsRare(movies) {
   });
 }
 
-const updatedLotr = addIsRare(lotrUniverse);
+const updatedLotr = getMoviesWithIsRare(lotrUniverse);
